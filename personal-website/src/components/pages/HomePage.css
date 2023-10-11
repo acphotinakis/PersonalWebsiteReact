@@ -1,0 +1,88 @@
+.home-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 760px;
+    background-color: #FFFEF2;
+}
+
+h1 {
+    font-family: 'Crimson Pro', serif;
+    font-size: 60px;
+}
+
+.welcome-typed{
+    border-radius: 10px;
+    font-family: 'Crimson Pro', serif;
+    text-align: center;
+    top: calc(5% - 50px); /* 33.33% of the viewport height minus half the height of the name div */
+    left: calc(10% - 50px); /* 25% of the viewport width minus half the width of the name div */
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.name {
+    border-radius: 10px;
+    font-family: 'Crimson Pro', serif;
+    text-align: center;
+    top: calc(25% - 50px); /* 33.33% of the viewport height minus half the height of the name div */
+    left: calc(10% - 50px); /* 25% of the viewport width minus half the width of the name div */
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.badges {
+    gap: 20px; 
+    display: inline-flex;
+}
+
+.shadow-text {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .typedcol{
+    position: sticky;
+  }
+
+
+.typeEffectText {
+    font-family: 'Crimson Pro', serif;
+    font-size: 22px; /* Set the font size to 18px */
+    color: black;
+    top: 0; /* Position it at the top of the parent container */
+}
+
+.resume-button:hover{
+    cursor: pointer;
+}
+
+
+.resume-txt-div{
+    margin-top: 30px;
+    margin-left: 115px;
+    width: 50%;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background: #FF7377;
+    border-color: #FF7377;
+}
+
+.button-text{
+    color:black;
+    font-size: 18px;
+}
