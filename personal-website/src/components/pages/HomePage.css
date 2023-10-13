@@ -5,84 +5,102 @@
     align-items: center;
     height: 760px;
     background-color: #FFFEF2;
+    background-image: url("/Users/andrewphotinakis/Documents/ReactPersonalWebsite/personal-website/src/assets/mount_everest.jpg");
+    background-size: cover;
+    background-position: bottom;
 }
 
 h1 {
     font-family: 'Crimson Pro', serif;
     font-size: 60px;
-}
-
-.welcome-typed{
-    border-radius: 10px;
-    font-family: 'Crimson Pro', serif;
-    text-align: center;
-    top: calc(5% - 50px); /* 33.33% of the viewport height minus half the height of the name div */
-    left: calc(10% - 50px); /* 25% of the viewport width minus half the width of the name div */
-    height: 500px;
-    width: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+    z-index: 1;
 }
 
 .name {
+    background-color: rgba(255, 255, 255, 0.6);
     border-radius: 10px;
     font-family: 'Crimson Pro', serif;
     text-align: center;
-    top: calc(25% - 50px); /* 33.33% of the viewport height minus half the height of the name div */
-    left: calc(10% - 50px); /* 25% of the viewport width minus half the width of the name div */
-    height: 500px;
+    top: calc(50% - 50px);
+    left: calc(50% - 250px);
+    height: 300px;
     width: 500px;
-    border: 1px solid black;
+    border: 1px solid #cde7f0;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 20px #cde7f0;
+    z-index: 1;
+}
+
+.welcome-typed {
+    border-radius: 10px;
+    font-family: 'Crimson Pro', serif;
+    text-align: center;
+    top: calc(5% - 50px);
+    left: calc(50% - 250px);
+    height: 500px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
 }
 
 .badges {
-    gap: 20px; 
+    gap: 20px;
     display: inline-flex;
+    z-index: 1;
 }
 
 .shadow-text {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
+    z-index: 1;
+}
 
-  .typedcol{
-    position: sticky;
-  }
-
+.typedcol {
+    position: relative;
+    z-index: 1;
+}
 
 .typeEffectText {
     font-family: 'Crimson Pro', serif;
-    font-size: 22px; /* Set the font size to 18px */
+    font-size: 50px;
     color: black;
-    top: 0; /* Position it at the top of the parent container */
+    top: 0;
+    position: sticky;
+    z-index: 1;
 }
 
-.resume-button:hover{
+.resume-button:hover {
     cursor: pointer;
+    z-index: 1;
 }
 
-
-.resume-txt-div{
+.resume-txt-div {
     margin-top: 30px;
-    margin-left: 115px;
+    margin-left: 110px;
     width: 50%;
     height: 50px;
     border-radius: 25px;
     border: 1px solid black;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    background: #FF7377;
-    border-color: #FF7377;
+    justify-content: center;
+    align-items: center;
+    background: #cde7f0;
+    border-color: #cde7f0;
+    z-index: 1;
 }
 
-.button-text{
-    color:black;
+.resume-txt-div:hover{
+    background: white;
+    color: #cde7f0;
+}
+
+.button-text {
+    color: black;
     font-size: 18px;
+    z-index: 1;
 }

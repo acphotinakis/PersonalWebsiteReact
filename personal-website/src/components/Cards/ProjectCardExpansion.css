@@ -1,0 +1,87 @@
+/* ProjectCardExpansion.css */
+.main{ 
+    font-family: 'Crimson Pro', serif;
+    border-radius: 10px;
+    position: fixed; 
+    z-index: 999;
+    background: white;
+    height: fit-content;
+    width: 800px;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 10);
+}
+
+.exit{
+    background: black;
+    color: white;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.exit:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+    .button{
+        color: black;
+    }
+    
+}
+
+.button{
+    color: white;
+}
+
+.button:hover{
+    color:black;
+}
+
+.circles-close{
+    margin-top: 10px;
+    margin-left: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.circles-close:hover{
+    cursor: pointer;
+}
+
+.stack{
+    margin-left: 10px;
+}
+
+.project-name{
+    font-family: 'Crimson Pro', serif;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.description{
+    margin-left: 10px;
+}
+
+.cbutthole{
+    font-family: 'Crimson Pro', serif;
+    background: black;
+    width: 100px;
+    height: 200px;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+/* Add margin-right to create a gap between the icons */
+.circles-close > svg {
+    margin-right: 20px; /* Adjust the margin as needed */
+}

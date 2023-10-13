@@ -1,0 +1,60 @@
+/* Sidebar Styles */
+.sidebar {
+    width: 200px;    
+    top: calc(50% - 200px);
+    left: 50px;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #6B7A90;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 10);
+    transition: width 0.3s ease-in-out;
+    height: fit-content;
+    position: fixed;
+}
+
+.sidebar.minimized {
+    height: 40px;
+}
+
+.sidebar a {
+    font-family: 'Crimson Pro', serif;
+    text-align: center;
+    font-size: 25px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.sidebar a:hover {
+    color: white;
+}
+
+.icon-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+/* Toggle Button Styles */
+.toggle-button {
+    width: 120px;
+    height: fit-content;
+    background: #cde7f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background: #97c2d1;
+}

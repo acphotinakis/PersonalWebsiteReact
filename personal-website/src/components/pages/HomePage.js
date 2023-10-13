@@ -38,30 +38,27 @@ const HomePage = () => {
             </div>
             <div className='welcome-typed'>
                 <Container>
-                    <Row>
-                        <Col className='typedcol'>
-                            <ReactTypingEffect
-                                text={["Hi there ✌️, I'm"]}
-                                cursorRenderer={cursor => <h1 className='typeEffectText'>{cursor}</h1>}
-                                speed={100}
-                                cursor='~'
-                                displayTextRenderer={(text) => {
-                                    return (
-                                        <h1>
-                                            {text.split('').map((char, i) => {
-                                                const key = `${i}`;
-                                                return (
-                                                    <span className='typeEffectText'
-                                                        key={key}
-                                                    >{char}</span>
-                                                );
-                                            })}
-                                        </h1>
-                                    );
-                                }}
-                            />
-                        </Col>
-                    </Row>
+                    <ReactTypingEffect
+                        text={["Hi there ✌️, I'm"]}
+                        cursorRenderer={cursor => <h1 className='typeEffectText'>{cursor}</h1>}
+                        speed={100}
+                        cursor='~'
+                        displayTextRenderer={(text) => {
+                            return (
+                                <h1>
+                                    {text.split('').map((char, i) => {
+                                        const key = `${i}`;
+                                        return (
+                                            <span className='typeEffectText'
+                                                key={key}
+                                            >{char}</span>
+                                        );
+                                    })}
+                                </h1>
+                            );
+                        }}
+                    />
+
                 </Container>
             </div>
             <div className='name'>

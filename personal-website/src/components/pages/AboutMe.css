@@ -1,0 +1,14 @@
+.asdfas {
+    width: 100%;
+    height: 1000px;
+    background-color: #f0f0f0;
+    position: relative; /* Create a positioning context for the image */
+
+    background-image: url('../../assets/santorini.jpg');
+    background-size: cover; /* Adjust background size as needed */
+    background-position: center ;
+    position: flex;
+    z-index: -1;
+    box-shadow: 5px 5px 10px rgba(255, 0, 0, 0.5);
+}
+

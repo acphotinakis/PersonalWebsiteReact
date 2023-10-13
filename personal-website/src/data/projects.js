@@ -22,6 +22,7 @@ const projects = [
         description:
             "Engineered a flexible MVVM architecture in developing a sophisticated RESTful API using Spring Boot, Java, and Maven, achieving efficient financial data retrieval from Finviz.com by incorporating advanced web scraping techniques. Facilitated efficient data storage in JSON files, setting the groundwork for seamless NoSQL database integration. Validated API endpoints with JUnit testing to ensure precise data extraction, transformation, and storage processes, enhancing overall data accuracy and functionality. Strengthened API security and access control through the implementation of JSON Web Tokens (JWT), enhancing user authentication and authorization capabilities. Furthermore, advanced rate limiting mechanisms were integrated to ensure responsible web scraping, maintaining optimal data collection efficiency while adhering to Finviz.com's usage policies.",
         link: "https://github.com/AndrewP987/webfinvizapi",
+        image: '/Users/andrewphotinakis/Documents/ReactPersonalWebsite/personal-website/src/assets/forest.jpg'
     },
     {
         name: "Keyboard E-Store",
@@ -53,6 +54,19 @@ const projects = [
         description:
             "Improved efficiency and time complexities by constructing a radix tree-based database using bit manipulation in C for IPV4 addresses, resulting in optimized data storage. Enhanced query functionality with a user-friendly session for retrieving information based on full or partial IPV4 addresses, effectively showcasing the capabilities of the Abstract Data Type radix tree. Optimized development workflow and code editing by employing Vim and Bash, enhancing efficiency, and maintaining seamless software development process. Ensured robust code quality and reliability by effectively utilizing Valgrind for meticulous memory leak detection and GDB for precise debugging and program behavior analysis.",
         link: "https://github.com/AndrewP987/Place-IP",
+    },
+    {
+        name: "Personal Website",
+        location: "Washington, DC",
+        technologies_used: [
+            "React",
+            "HTML",
+            "CSS"
+        ],
+        start_date: "October 2023",
+        end_date: "Present",
+        description: "",
+        link: "https://github.com/AndrewP987/PersonalWebsiteReact",
     },
     {
         name: "Facebook Clone",
@@ -100,6 +114,7 @@ const projects = [
         description:
             "Jam Game is a popular board game amongst younger children. In light of this, I decided to create a GUI version of the game using Java and JavaFX to create UI design. The point of the game is to move the RED X labeled car all the way to the right side of the board, but there are other cars in the way preventing such a thing. In order to get the red car to the side of the board, the player must implement problem solving to move the other cars either horizontally or vertically based on the way they are facing. In the program, Breadth First Search is constantly being used to find the next shortest game layer to get to a solution. So if the game player is stuck and doesn't know what move to make, he/she can press the 'Hint' button which will update the game by moving a car based on the configuration created from the BFS algorithm. If the puzzle at the current configuration or game board is not solvable, then the user is notified. Back to cars, cars either move horizontally or vetically and they cannot jump over other cars in their way to the second selected spot by the user. If the user tries to break these rules, they will not be able to complete them and will be notified. In the game another important concept besides Breadth First Search and configuration making, is using the concept of MVC or Model View Controller. Whenever a car was pressed or a load button was clicked, the controller called the model to run the specific function to take care of that action. In doing so the view was then updated for the user interface. For example, if the user wants to change the game puzzle, they would press the load button, in which the controller would notify the model to execute the load function for the user's new puzzle choice. If the puzzle is valid, than the view is updated by displaying the new puzzle.",
         link: "https://github.com/AndrewP987/JamGame",
+
     },
 
 

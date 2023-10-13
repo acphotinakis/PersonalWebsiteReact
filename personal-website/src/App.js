@@ -1,18 +1,20 @@
-import ReactDOM from "react-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import React from "react";
 import HomePage from "./components/pages/HomePage.js";
+import Navigation from "./components/common/Navigation.js";
+import Portfolio from "./components/pages/Portfolio.js";
+import AboutMe from "./components/pages/AboutMe.js";
+import { Container, Row, Col } from "react-bootstrap";
 
-export default function App() {
+
+const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<HomePage />}>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <Container>
+      <Row><Navigation /></Row>
+      <Row><HomePage /></Row>
+      <Row><AboutMe /></Row>
+      <Row><Portfolio /></Row>
+    </Container>
   );
-}
+};
 
-const root = document.getElementById('root');
-ReactDOM.createRoot(root).render(<App />);
+export default App;
