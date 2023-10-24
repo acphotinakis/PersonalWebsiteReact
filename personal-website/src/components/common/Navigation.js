@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Navigation.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet';
 import { AiFillHome, AiFillInfoCircle, AiFillTool, AiFillContacts } from 'react-icons/ai';
 import { GiLaptop } from 'react-icons/gi';
 import { HiDocumentText } from 'react-icons/hi';
-import { IoIosClose } from 'react-icons/io';
+
 
 const Navbar = () => {
 

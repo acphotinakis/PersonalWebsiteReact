@@ -3,7 +3,7 @@ import HomePage from "./components/pages/HomePage.js";
 import Navigation from "./components/common/Navigation.js";
 import Portfolio from "./components/pages/Portfolio.js";
 import AboutMe from "./components/pages/AboutMe.js";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 
 const App = () => {

@@ -1,7 +1,6 @@
 // src/components/ProjectCard.js
 import React, { useState } from 'react';
 import Card from 'react-bootstrap/Card';
-import ListGroup from 'react-bootstrap/ListGroup';
 import './ProjectCard.css';
 import { AiFillGithub } from 'react-icons/ai';
 import { Helmet } from 'react-helmet';
@@ -45,7 +44,7 @@ const ProjectCard = ({ project }) => {
                             <AiFillGithub className='github-icon' />
                         </div>
                     </a>
-                    <a onClick={toggleComponent}>
+                    <a href="www.google.com/this-isn-a-real-link" onClick={toggleComponent} >
                         <div className='question-link'>
                             <AiFillQuestionCircle className='question-icon' />
                         </div>
