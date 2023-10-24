@@ -13,12 +13,17 @@ This website is currently under development and will be deployed live upon compl
 - **React Helmet**: Enables the management of document head tags like title and meta tags.
 - **React Icons**: Provides a set of high-quality icons for React applications.
 - **npm**: The package manager for JavaScript used to install and manage project dependencies.
+---
+
 
 ## Project Structure
 
 - **assets**: Contains images and my resume for use throughout the website.
 - **components**: Houses various React UI components, making the codebase organized and modular.
 - **data**: Stores JSON objects that are used to populate data in the UI components.
+
+---
+
 
 ## Usage
 
