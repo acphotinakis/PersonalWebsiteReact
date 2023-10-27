@@ -4,19 +4,7 @@ const projects = [
     {
         name: "WebFinvizAPI",
         location: "Rochester, NY",
-        technologies_used: [
-            "Java",
-            "Spring",
-            "JUnit",
-            "JSoup",
-            "Postman",
-            "Git",
-            "JWT",
-            "MVVM",
-            "REST API",
-            "JSON",
-            "NoSQL",
-        ],
+        technologies_used: "Java,Spring,JUnit, JSoup, Postman, Git, JWT, MVVM REST API,JSON, NoSQL",
         start_date: "August 2023",
         end_date: "Present",
         description:
@@ -121,8 +109,15 @@ const projects = [
 ];
 
 projects.forEach((project) => {
-    project.technologies = project.technologies_used.join(', ');
+    if (Array.isArray(project.technologies_used)) {
+        project.technologies = project.technologies_used.join(', ');
+    } else if (typeof project.technologies_used === 'string') {
+        project.technologies = project.technologies_used;
+    } else {
+        project.technologies = ''; // Handle other cases as needed
+    }
     delete project.technologies_used;
 });
+
 
 export default projects;

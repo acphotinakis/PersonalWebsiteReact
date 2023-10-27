@@ -12,6 +12,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import informationExpert from '~/data/personalInformation';
 import ResumePDF from '~/assets/Photinakis_Andrew_Resume.pdf';
+import RepImage from '~/assets/Repimage.jpeg';
 
 library.add(faCoffee, faFont);
 
@@ -30,43 +31,28 @@ const HomePage = () => {
 
     return (
         <div className='home-page'>
-            <div>
-                <Helmet>
-                    <title>HomePage</title>
-                    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Crimson+Pro" />
-                </Helmet>
-            </div>
-            <div className='welcome-typed'>
-                <Container>
-                    <ReactTypingEffect
-                        text={["Hi there ✌️, I'm"]}
-                        cursorRenderer={cursor => <h1 className='typeEffectText'>{cursor}</h1>}
-                        speed={100}
-                        cursor='~'
-                        displayTextRenderer={(text) => {
-                            return (
-                                <h1>
-                                    {text.split('').map((char, i) => {
-                                        const key = `${i}`;
-                                        return (
-                                            <span className='typeEffectText'
-                                                key={key}
-                                            >{char}</span>
-                                        );
-                                    })}
-                                </h1>
-                            );
-                        }}
-                    />
-
-                </Container>
-            </div>
+            <Helmet>
+                <title>HomePage</title>
+                <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Crimson+Pro" />
+            </Helmet>
             <div className='name'>
                 <Container>
                     <Row>
                         <Col>
+                            <div className='circle-image'>
+                                <img src={RepImage} alt="Your Image" />
+                            </div>
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col>
                             <h1 className='shadow-text'> {informationExpert.name}</h1>
                         </Col>
+                        <Col>Rochester Institute of Technology</Col>
+                        <br />
+                        <Col>Washington DC-Baltimore Area</Col>
+                        <br />
+                        <Col>Junior at Rochester Institute of Technology majoring in Computer Science with a minor in Finance. Strong interests in software engineering, data science, cloud computing, and high frequency/algorithmic trading. Interested in making new connections and looking for an internship/co-op for Spring/Summer 2024.</Col>
                     </Row>
                     <Row>
                         <Col className='badges'>
@@ -91,6 +77,7 @@ const HomePage = () => {
                     </Row>
                 </Container>
             </div>
+
         </div>
     );
 };

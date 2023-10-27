@@ -1,42 +1,55 @@
 .home-page {
-    display: flex;
+    position: relative;
     flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 760px;
-    background-color: #FFFEF2;
-    background-image: url("/Users/andrewphotinakis/Documents/ReactPersonalWebsite/personal-website/src/assets/mount_everest.jpg");
-    background-size: cover;
-    background-position: bottom;
+    background-color: #D3D3D3;
+    min-height: 100vh; 
 }
 
 h1 {
-    font-family: 'Crimson Pro', serif;
-    font-size: 60px;
+    font-size: 50px;
     z-index: 1;
 }
 
 .name {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: white;
     border-radius: 10px;
     font-family: 'Crimson Pro', serif;
     text-align: center;
-    top: calc(50% - 50px);
-    left: calc(50% - 250px);
-    height: 300px;
-    width: 500px;
-    border: 1px solid #cde7f0;
+    height: 700px;
+    width: 600px;
+    display: flex;
+    flex-direction: column; /* Add this */
+    justify-content: center;
+    align-items: center; /* Center items vertically and horizontally */
+    position: absolute;
+    box-shadow: 80px 80px 80px 80px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.circle-image {
+    margin-left: 20px;
+    height: 200px;
+    width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    box-shadow: 0 0 20px #cde7f0;
-    z-index: 1;
+    border-radius: 50%; /* Make it a circle */
+    overflow: hidden; /* Hide image overflow */
 }
+
+.circle-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 
 .welcome-typed {
     border-radius: 10px;
     font-family: 'Crimson Pro', serif;
+    font-size: 2px;
     text-align: center;
     top: calc(5% - 50px);
     left: calc(50% - 250px);
@@ -50,6 +63,7 @@ h1 {
 }
 
 .badges {
+    margin-top:20px;
     gap: 20px;
     display: inline-flex;
     z-index: 1;
@@ -73,15 +87,9 @@ h1 {
     position: sticky;
     z-index: 1;
 }
-
-.resume-button:hover {
-    cursor: pointer;
-    z-index: 1;
-}
-
-.resume-txt-div {
+.resume-button {
     margin-top: 30px;
-    margin-left: 110px;
+    margin-left: 150px;
     width: 50%;
     height: 50px;
     border-radius: 25px;
@@ -89,18 +97,15 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #cde7f0;
-    border-color: #cde7f0;
+    background: red;
+    border-color: red;
+    color: white;
     z-index: 1;
+    transition: background 0.3s, color 0.3s; 
 }
 
-.resume-txt-div:hover{
+.resume-button:hover {
     background: white;
-    color: #cde7f0;
-}
-
-.button-text {
-    color: black;
-    font-size: 18px;
-    z-index: 1;
+    cursor: pointer;
+    color: red;
 }

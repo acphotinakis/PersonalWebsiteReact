@@ -1,6 +1,7 @@
 .App {
-  text-align: center;
-}
+    text-align: center;
+    min-height: 100vh; /* Make the content start at the top of the viewport */
+  }
 
 .App-logo {
   height: 40vmin;
