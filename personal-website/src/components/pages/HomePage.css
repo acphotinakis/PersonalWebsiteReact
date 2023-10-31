@@ -1,11 +1,39 @@
+
+
 .home-page {
     position: relative;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #D3D3D3;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    background: linear-gradient(45deg, #191E29, #696E79); /* Define your hex color combination */
+    background-blend-mode: multiply; /* Set the blending mode */
     min-height: 100vh; 
+}
+
+
+.name {
+    background-image: url('/Users/andrewphotinakis/Documents/PersonalWebsiteReact/personal-website/src/assets/futuristic-images/Abstract-futuristic-blue-background-Graphics-17251979-1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    font-family: 'Crimson Pro', serif;
+    text-align: center;
+    height: 1000px;
+    width: 700px;
+    display: flex;
+    flex-direction: column; /* Add this */
+    justify-content: center;
+    align-items: center; /* Center items vertically and horizontally */
+    position: absolute;
+    box-shadow: 80px 80px 80px 80px rgba(0, 0, 0, 42);
+    z-index: 1;
+    color:white;
+    font-size: 24px;
 }
 
 h1 {
@@ -13,21 +41,6 @@ h1 {
     z-index: 1;
 }
 
-.name {
-    background-color: white;
-    border-radius: 10px;
-    font-family: 'Crimson Pro', serif;
-    text-align: center;
-    height: 700px;
-    width: 600px;
-    display: flex;
-    flex-direction: column; /* Add this */
-    justify-content: center;
-    align-items: center; /* Center items vertically and horizontally */
-    position: absolute;
-    box-shadow: 80px 80px 80px 80px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-}
 
 .circle-image {
     margin-left: 20px;
@@ -52,8 +65,7 @@ h1 {
     font-size: 2px;
     text-align: center;
     top: calc(5% - 50px);
-    left: calc(50% - 250px);
-    height: 500px;
+    left: calc(50% - 250px);    height: 500px;
     width: 500px;
     display: flex;
     justify-content: center;
@@ -97,15 +109,17 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: red;
-    border-color: red;
     color: white;
     z-index: 1;
-    transition: background 0.3s, color 0.3s; 
+    background-image: url('/Users/andrewphotinakis/Documents/PersonalWebsiteReact/personal-website/src/assets/futuristic-images/Abstract-futuristic-blue-background-Graphics-17251979-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .resume-button:hover {
-    background: white;
     cursor: pointer;
-    color: red;
+    background-image: url('/Users/andrewphotinakis/Documents/PersonalWebsiteReact/personal-website/src/assets/futuristic-images/city-futuristic.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;    
+    background-position: top;
 }

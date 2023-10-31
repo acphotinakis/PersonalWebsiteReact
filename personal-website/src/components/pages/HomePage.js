@@ -48,11 +48,9 @@ const HomePage = () => {
                         <Col>
                             <h1 className='shadow-text'> {informationExpert.name}</h1>
                         </Col>
-                        <Col>Rochester Institute of Technology</Col>
+                        <Col>Rochester Institute of Technology (Expected May 2026)</Col>
                         <br />
                         <Col>Washington DC-Baltimore Area</Col>
-                        <br />
-                        <Col>Junior at Rochester Institute of Technology majoring in Computer Science with a minor in Finance. Strong interests in software engineering, data science, cloud computing, and high frequency/algorithmic trading. Interested in making new connections and looking for an internship/co-op for Spring/Summer 2024.</Col>
                     </Row>
                     <Row>
                         <Col className='badges'>

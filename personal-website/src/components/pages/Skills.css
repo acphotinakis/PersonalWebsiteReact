@@ -1,0 +1,36 @@
+/* src/pages/Skills.css */
+*{
+    font-family: 'Crimson Pro', serif;
+  }
+
+
+.skills{
+    border: 1px solid black;
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: top;
+    background-color: #D3D3D3;
+}
+
+.skill-card {
+    padding: 16px;
+    width: 300px;
+    height: fit-content;
+    border-radius: 20px;
+    box-shadow: 40px 40px 40px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .skills-list{
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 10px 5px;
+    flex-direction: column;
+  }
