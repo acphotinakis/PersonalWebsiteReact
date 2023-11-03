@@ -4,6 +4,12 @@
   min-height: 100vh;
   background-color: #D3D3D3;
   position: relative; /* Add this to position its child elements */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: top;
+  background: linear-gradient(45deg, #191E29, #696E79); /* Define your hex color combination */
+  justify-content: space-between;
 }
 
 .logo {

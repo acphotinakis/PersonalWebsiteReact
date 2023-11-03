@@ -10,8 +10,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-position: top;
-    background: linear-gradient(45deg, #191E29, #696E79); /* Define your hex color combination */
-    background-blend-mode: multiply; /* Set the blending mode */
     min-height: 100vh; 
 }
 
@@ -118,7 +116,7 @@ h1 {
 
 .resume-button:hover {
     cursor: pointer;
-    background-image: url('/Users/andrewphotinakis/Documents/PersonalWebsiteReact/personal-website/src/assets/futuristic-images/city-futuristic.jpeg');
+    background-image: url('/Users/andrewphotinakis/Documents/PersonalWebsiteReact/personal-website/src/assets/futuristic-images/city_futuristic.jpeg');
     background-size: cover;
     background-repeat: no-repeat;    
     background-position: top;
